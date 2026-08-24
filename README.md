@@ -6,7 +6,7 @@ Fixes for Combat Mission 2 will come soon.
 
 ## Combat Mission 3: Afrika Korps
 
-Combat Mission 3 loses the ability to target with vehicles when you enable WASD. The `cmak.dll` file in your installation directory is a shim that enables this functionality and patches CM3 at runtime. The DLL defines what keyboard keys should be remapped. The <kbd>D</kbd> key (`Hull Down`) is remapped to <kbd>T</kbd> for tanks, so that WASD controls the camera. The fix is to adjust that DLL directly, giving it no key in the rebind for `Hull Down`. The only way to trigger the `Hull Down` command is to right-click on the vehicle and 
+Combat Mission 3 loses the ability to target with vehicles when you enable WASD. The `cmak.dll` file in your installation directory is a shim that enables this functionality and patches CM3 at runtime. The DLL defines what keyboard keys should be remapped. The <kbd>D</kbd> key (`Hull Down`) is remapped to <kbd>T</kbd> for tanks, so that WASD controls the camera. The fix is to adjust that DLL directly, giving it no key in the rebind for `Hull Down`. The only way to trigger the `Hull Down` command is to right-click on the vehicle and choose the command.
 
 As I'm not distributing any binaries, you'll have to apply this patch yourself. I'm using game console ROM hacking technology to apply the patch, as that's quite a large ecosystem of tools.
 
