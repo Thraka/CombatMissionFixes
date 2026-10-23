@@ -4,6 +4,10 @@ Fixes for the Steam versions of Combat Mission games released by SNEG. (SNEG is 
 
 Both **Combat Mission Barbarossa to Berlin** and **Combat Mission Afrika Korps** lose the ability to target with vehicles when you enable the <kbd>WASD</kbd> option. A game-specific DLL shim enables the <kbd>WASD</kbd> option and patches the game at run-time. The DLL defines what keyboard keys should be remapped. The <kbd>D</kbd> key (`Hull Down`) is remapped to <kbd>T</kbd> for tanks, so that <kbd>WASD</kbd> can control the camera. However, it doesn't remove the mapping of <kbd>T</kbd> for the `Target` command, causing a conflict. The game resolves that conflict by removing the `Target` command. The fix is to adjust that DLL directly, rebinding the `Hull Down` command to nothing. This avoids the conflict and restores <kbd>T</kbd> to `Target`. The only way to trigger the `Hull Down` command is to right-click on the vehicle and choose the command.
 
+To download the patch file, navigate to the file and click the download icon. Each file is listed in the appropriate section. The download icon is located on the right-side of the screen and looks like the following image:
+
+![download icon](image.png)
+
 ## Combat Mission 2: Barbarossa to Berlin
 
 [Patch fix file: `cmbb.bps`](cmbb.bps)
